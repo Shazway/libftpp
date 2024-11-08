@@ -6,8 +6,11 @@
 /*   By: tmoragli <tmoragli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 15:36:25 by tmoragli          #+#    #+#             */
-/*   Updated: 2024/10/26 15:36:38 by tmoragli         ###   ########.fr       */
+/*   Updated: 2024/11/05 19:45:03 by tmoragli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
+
+#include "pool.hpp"
+#include "data_buffer.hpp"

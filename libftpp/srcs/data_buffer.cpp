@@ -1,19 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libftpp.hpp                                        :+:      :+:    :+:   */
+/*   data_buffer.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tmoragli <tmoragli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/26 14:48:17 by tmoragli          #+#    #+#             */
-/*   Updated: 2024/11/05 19:31:50 by tmoragli         ###   ########.fr       */
+/*   Created: 2024/11/05 19:30:59 by tmoragli          #+#    #+#             */
+/*   Updated: 2024/11/06 00:51:50 by tmoragli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#pragma once
+#include "data_buffer.hpp"
 
-//Libftpp headers
-#include "data_structures.hpp"
+const std::vector<uint8_t> &DataBuffer::getBuffer() const {
+	return buffer;
+}
 
-//Other includes
-#include <iostream>
+void DataBuffer::clear() {
+	buffer.clear();
+}

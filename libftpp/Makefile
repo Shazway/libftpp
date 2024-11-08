@@ -8,7 +8,7 @@ CC			=	g++
 AR			=	ar rcs
 SRC_PATH	=	srcs/
 INCLUDES	=	-Iincludes
-SRC_NAME	=	
+SRC_NAME	=	data_buffer.cpp
 
 OBJ_NAME	=	$(SRC_NAME:.cpp=.o)
 OBJ			=	$(addprefix $(OBJ_PATH), $(OBJ_NAME))
@@ -38,12 +38,12 @@ $(OBJ_PATH)%.o: $(SRC_PATH)%.cpp
 -include $(OBJ:%.o=%.d)
 
 clean:
-	@echo "$(CYAN)♻  Cleaning obj files ♻ $(WHITE)"
+	@echo "$(CYAN)♻  Cleaning LIB obj files ♻ $(WHITE)"
 	rm -rf $(OBJ_PATH)
 	@echo "$(GREEN)Done !✅ $(EOC)"
 
 fclean: clean
-	@echo "$(CYAN)♻  Cleaning executable ♻ $(WHITE)"
+	@echo "$(CYAN)♻  Cleaning LIB .a file ♻ $(WHITE)"
 	rm -rf $(LIB_NAME)
 	@echo "$(GREEN)Done !✅ $(EOC)"
 
